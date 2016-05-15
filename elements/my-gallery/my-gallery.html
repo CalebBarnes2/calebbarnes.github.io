@@ -1,0 +1,55 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="my-gallery">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+             
+        .page-title {
+            color: white;
+            
+        }
+        .paper-font-body2 {
+            color: white;
+        }
+        iron-image{
+            border-radius: 300px;
+        }
+    </style>
+      <div class="horizontal layout center-center">
+        <div class="vertical layout center-center">
+    <h2 class="page-title center">Gallery</h2>
+    
+            <span class="paper-font-body2">404 page not found...</span>
+            <iron-image sizing="contain" style="box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);width:300px; height:300px;" src="../../images/404.jpg"></iron-image>
+        </div>
+      </div>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'my-gallery',
+
+        properties: {
+
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
